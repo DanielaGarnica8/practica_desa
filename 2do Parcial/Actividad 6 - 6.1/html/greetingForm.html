@@ -1,0 +1,42 @@
+<!-- 
+    Descripción: Formulario que captura un nombre.
+    Autor: Daniela Garnica 
+    Fecha: 12 Octubre 2022 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Greeting</title>
+</head>
+
+<body>
+  <h1>
+    <center>Greeting Formulario </center>
+  </h1>
+  <form action="../php/greetingForm.php" method="post">
+    <!-- Código que captura según el POST-->
+    <label for="nombre" class="texto"> Ingresa tu nombre</label>
+    <input type="text" class="dato" name="nombre" id="nombre">
+    <label for="nombre" class="texto"> Ingresa tu edad</label>
+    <input type="text" class="dato" name="edad" id="edad">
+    <label for="nombre" class="texto"> Ingresa tu teléfono</label>
+    <input type="text" class="dato" name="telefono" id="telefono">
+    <input type="submit" class="bottom" value="Saludar">
+  </form>
+
+  <!--
+    Manera en la que se utiliza el método GET y POST.
+    GET: Recibe un valor, en la cual se ejecutara cuando se describe la propiedad.
+    POST: Nos permite recuperar los datos envíados desde formularios con el método POST.
+  -->
+
+</body>
+</html>
