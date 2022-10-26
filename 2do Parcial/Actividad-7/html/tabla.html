@@ -1,0 +1,31 @@
+<!--
+   Generar tabla 
+   Autor: Karla Daniela Garnica Bazán 
+   Fecha: 21 Octubre 2022 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style1.css">
+    <title>Generando tabla</title>
+</head>
+<body>
+    <div class="form__top">
+    <h1>
+        <center>Tabla </center>
+      </h1><br><br>
+    </div>
+    <form action="../php/tabla.php" method="get">
+        <label for="" class="texto">Columna </label>
+        <input type="number" class="num" name="columna" id="columna">
+        <label for="" class="texto">Renglon </label>
+        <input type="number" class="num" name="renglon" id="renglon"><br><br><br>
+        <input type="submit" class="bottom" value="Generar">
+    </form>
+</body>
+</html>
+
